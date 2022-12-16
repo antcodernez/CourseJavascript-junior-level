@@ -53,6 +53,33 @@ let eleccionOperacion = prompt(`Ingresa la operacion de quieres realizar \n 1 --
             case `5` :
                 let potencia = prompt("Ingrese el numero que quiere potenciar: ");
                 
+                potencia = parseFloat(potencia);
+
+                let resultPotencia = potencia * potencia;
+
+                alert(`La potencia de su numero es: ${resultPotencia}`);
+            break;
+
+            case `6` :
+                let raiz = prompt("Ingrese el numero que desea saber su raíz: ");
+        
+                raiz = parseFloat(raiz);
+                raiz = Math.sqrt(raiz);
+
+                alert(`La raíz cuadrada de tu numero es: ${raiz}`);
+            break;
+
+            case `7` :
+                let raizCubica = prompt(`Ingrese el numero para saber su raiz cubica: `);
+
+                raizCubica = parseFloat(raizCubica);
+                raizCubica = Math.cbrt(raizCubica);
+
+                alert(`La raíz cubica de su numero es: ${raizCubica}`);
+            break;
+
+            default :
+                alert("Ingresa un valor valido por favor we nmms");
             break;
         }        
     
